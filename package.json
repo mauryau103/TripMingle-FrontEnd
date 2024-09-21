@@ -5,14 +5,14 @@
   "type": "module",
   "scripts": {
     "start": "npm run dev",
-    "dev": "vite --port 2002",
-    "start_dev": "vite -- --mode development --port 2002",
+    "dev": "vite",
+    "start_dev": "vite -- --mode development",
     "start_prod": "vite -- --mode production",
     "build": "vite build",
     "build_dev": "vite build -- --mode development",
     "build_prod": "vite build -- --mode production",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview --port 3000"
+    "preview": "vite preview --port 2002"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
@@ -46,7 +46,7 @@
     "sass": "^1.71.1",
     "yup": "^1.4.0"
   },
-"devDependencies": {
+  "devDependencies": {
     "@types/react": "^18.2.56",
     "@types/react-dom": "^18.2.19",
     "@vitejs/plugin-react-swc": "^3.5.0",
@@ -56,5 +56,4 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "vite": "^5.2.8"
   }
-  }
-
+}

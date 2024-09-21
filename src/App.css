@@ -1,3 +1,10 @@
+/* @import "bootstrap/scss/bootstrap";
+@import "./styles//scss/style.scss";
+html{
+    scroll-behavior: smooth;
+} */
+
+
 .App {
   text-align: center;
 }
