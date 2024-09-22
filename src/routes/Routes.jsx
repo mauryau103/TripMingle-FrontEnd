@@ -1,7 +1,10 @@
 import React, { lazy } from "react";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
-
+import Home from "../components/home/Home";
+import About from "../components/about/About";
+import Service from "../components/service/Service";
+import Contact from "../components/contact/Contact";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -15,10 +18,35 @@ const Routes = () => {
       element: (
         <>
           <Navbar />
-          {/* <Header />
-          <Hero />
-          <About /> */}
-          <Footer />
+          <Home />
+        </>
+      ),
+    },
+
+    {
+      path: "/about",
+      element: (
+        <>
+          <Navbar />
+          <About />
+        </>
+      ),
+    },
+    {
+      path: "/service",
+      element: (
+        <>
+          <Navbar />
+          <Service />
+        </>
+      ),
+    },
+    {
+      path: "/contact",
+      element: (
+        <>
+          <Navbar />
+          <Contact />
         </>
       ),
     },
