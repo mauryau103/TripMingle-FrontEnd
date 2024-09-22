@@ -1,0 +1,27 @@
+.hero {
+  background-image: url("/assets/images/hero-bg.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.explore-btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
