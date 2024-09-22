@@ -1,38 +1,60 @@
 {
   "name": "tripmingle-frontend",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "npm run dev",
+    "dev": "vite",
+    "start_dev": "vite -- --mode development",
+    "start_prod": "vite -- --mode production",
+    "build": "vite build",
+    "build_dev": "vite build -- --mode development",
+    "build_prod": "vite build -- --mode production",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview --port 2002"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "@hookform/resolvers": "^3.3.4",
+    "@wojtekmaj/react-daterange-picker": "^5.5.0",
+    "axios": "^1.6.8",
+    "bootstrap": "^5.3.3",
+    "chart.js": "^4.4.3",
+    "crypto-js": "^4.2.0",
+    "date-fns": "^3.6.0",
+    "google-map-react": "^2.2.1",
+    "js-base64": "^3.7.7",
+    "js-cookie": "^3.0.5",
+    "lodash": "^4.17.21",
+    "mdb": "^0.1.0",
+    "mdb-react-ui-kit": "^7.2.0",
+    "mdbreact": "^5.2.0",
+    "quill": "^2.0.1",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-datepicker": "^6.3.0",
+    "react-dom": "^18.2.0",
+    "react-google-recaptcha": "^3.1.0",
+    "react-hook-form": "^7.51.3",
+    "react-icons": "^5.0.1",
+    "react-idle-timer": "^5.7.2",
+    "react-quill": "^2.0.0",
+    "react-router-dom": "^6.22.1",
+    "react-search-autocomplete": "^8.5.2",
+    "react-select": "^5.8.0",
+    "react-time-picker": "^6.6.0",
+    "sass": "^1.71.1",
+    "yup": "^1.4.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@types/react": "^18.2.56",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "vite": "^5.2.8"
   }
 }
