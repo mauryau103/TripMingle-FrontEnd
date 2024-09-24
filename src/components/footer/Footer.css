@@ -1,36 +1,62 @@
 .footer {
-  background-color: #282c34;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
+  padding: 4rem 6rem;
+  background: #000;
+  color: #fff;
 }
 
-.social-links a {
-  margin: 0 15px;
-  color: white;
+.top {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.top i {
+  color: #fff;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.top i:hover {
+  color: #01959a;
+}
+
+.bottom {
+  padding-top: 2rem;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bottom div {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom h4 {
+  font-size: 1.3rem;
+  padding: 1rem 0 0.8rem 0;
+}
+
+.bottom a {
   text-decoration: none;
-  font-size: 1.2rem;
+  color: #fafafa;
+  padding-bottom: 0.4rem;
+  font-size: 1.1rem;
 }
 
-.social-links a:hover {
-  color: #61dafb;
-}
+@media screen and (max-width: 850px) {
+  .footer {
+    padding: 4rem 2rem;
+  }
 
-.footer-links {
-  margin-top: 15px;
-}
+  .footer i {
+    margin: 1rem 1rem 0 0;
+  }
 
-.footer-links a {
-  margin: 0 10px;
-  color: #61dafb;
-  text-decoration: none;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
-.footer-links a:not(:last-child) {
-  border-right: 1px solid #61dafb;
-  padding-right: 10;
+  .bottom div {
+    width: 50%;
+  }
 }
