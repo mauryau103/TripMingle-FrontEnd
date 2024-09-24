@@ -1,9 +1,16 @@
 import React from "react";
+import Hero from "../hero/Hero";
+import heroImg from "../../assets/images/1.jpg";
 
 const Service = () => {
   return (
     <>
-      <h1>This is Service Page</h1>
+      <Hero
+        cName="hero-mid"
+        heroImg={heroImg}
+        title="Service"
+        btnClass="hide"
+      />
     </>
   );
 };

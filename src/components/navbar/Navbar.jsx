@@ -20,12 +20,14 @@ const Navbar = () => {
       <ul className={clicked ? "nav-menu active" : "nav-menu"}>
         {MenuItems.map((item, index) => {
           return (
+            // <div className={item.cName} key={index}>
             <li key={index}>
               <Link className={item.cName} to={item.url}>
                 <i className={item.icon}></i>
                 {item.title}
               </Link>
             </li>
+            // </div>
           );
         })}
         <button>Sign Up</button>

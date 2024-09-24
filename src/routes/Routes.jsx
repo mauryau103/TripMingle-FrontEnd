@@ -1,16 +1,18 @@
 import React, { lazy } from "react";
 import Navbar from "../components/navbar/Navbar";
-import Footer from "../components/footer/Footer";
-import Home from "../components/home/Home";
 import About from "../components/about/About";
 import Service from "../components/service/Service";
 import Contact from "../components/contact/Contact";
+import Home from "../components/home/Home";
+
 import {
   createBrowserRouter,
   RouterProvider,
   Route,
   Navigate,
 } from "react-router-dom";
+import Footer from "../components/footer/Footer";
+import Trip from "../components/trip/Trip";
 const Routes = () => {
   const router = createBrowserRouter([
     {
@@ -29,6 +31,7 @@ const Routes = () => {
         <>
           <Navbar />
           <About />
+          <Footer />
         </>
       ),
     },
@@ -38,6 +41,8 @@ const Routes = () => {
         <>
           <Navbar />
           <Service />
+          <Trip />
+          <Footer />
         </>
       ),
     },
@@ -47,6 +52,7 @@ const Routes = () => {
         <>
           <Navbar />
           <Contact />
+          <Footer />
         </>
       ),
     },

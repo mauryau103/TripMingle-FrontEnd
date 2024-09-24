@@ -1,29 +1,15 @@
-.about {
-  padding: 60px 20px;
-  background-color: #f4f4f9;
-  text-align: center;
+.about-container {
+  margin: 4rem 6rem;
+  text-align: start;
 }
 
-.about h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: #282c34;
+.about-container h1 {
+  padding-bottom: 2rem;
 }
 
-.about p {
-  font-size: 1.2rem;
-  max-width: 800px;
-  margin: 0 auto;
-  color: #555;
-  line-height: 1.6;
-}
-
-@media (max-width: 768px) {
-  .about h2 {
-    font-size: 2rem;
-  }
-
-  .about p {
-    font-size: 1rem;
+@media screen and (max-width: 850px) {
+  .about-container {
+    margin: 4rem 6rem;
+    text-align: start;
   }
 }
