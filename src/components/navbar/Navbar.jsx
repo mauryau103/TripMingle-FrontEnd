@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { MenuItems } from "../../constants/MenuItems";
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
+  const navigate = useNavigate();
+
   const handleClick = () => {
     setClicked(!clicked);
+  };
+  const handleSignupClick = () => {
+    navigate("/signup");
   };
   return (
     <nav className="NavbarItems">
@@ -28,7 +33,7 @@ const Navbar = () => {
             </li>
           );
         })}
-        <button>Sign Up</button>
+        <button onClick={handleSignupClick}>Sign Up</button>
       </ul>
     </nav>
   );

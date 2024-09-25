@@ -1,4 +1,5 @@
 import "./Destination.css";
+import React from "react";
 
 const DestinationData = (props) => {
   return (
