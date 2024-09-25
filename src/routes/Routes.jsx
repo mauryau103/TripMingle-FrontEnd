@@ -13,6 +13,7 @@ import {
 } from "react-router-dom";
 import Footer from "../components/footer/Footer";
 import Trip from "../components/trip/Trip";
+import SignUp from "../user/auth/signup/SignUp";
 const Routes = () => {
   const router = createBrowserRouter([
     {
@@ -52,6 +53,17 @@ const Routes = () => {
         <>
           <Navbar />
           <Contact />
+          <Footer />
+        </>
+      ),
+    },
+
+    {
+      path: "/signup",
+      element: (
+        <>
+          <Navbar />
+          <SignUp />
           <Footer />
         </>
       ),
